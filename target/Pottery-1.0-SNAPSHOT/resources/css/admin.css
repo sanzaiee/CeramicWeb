@@ -1,0 +1,96 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 21, 2018, 11:15:26 AM
+    Author     : sanzaie
+*/
+body{
+   /* background-image: url('../img/newa.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 30px 0;
+}
+#top_section {
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+}
+.sidebar-left {
+    background: #dadadac7;
+ 
+    padding: 15px 15px;
+}
+.sidebar-left h3 {
+    text-align: center;
+}
+div#category_list ul {
+    list-style: none;
+}
+div#category_list ul li {
+    padding: 10px 0;
+}
+div#category_list ul,
+#bottom_section ul{
+    list-style: none;
+    padding-left: 8px;
+    text-align: center;
+    background: #a9a4a4c7;
+}
+div#category_list ul li a {
+    color: #fff;
+}
+div#bottom_section {
+    background: #dadadac7;
+    text-align: center;
+        margin-top: 30px;
+}
+div#bottom_section ul {
+    margin-bottom: 0;
+    list-style: none;
+    padding: 20px 0;
+}
+
+div#bottom_section ul li {
+    margin-bottom: 0;
+    display: inline-block;
+    margin: 0 15px;
+}
+div#bottom_section ul li a {
+    color: #fff;
+}
+#admin_header {
+    
+}
+.sidebar-left {
+    
+}
+
+#admin_footer{
+    
+}
+.img-circle {
+    width: 100px;
+    height: 100px;
+}
+
+element.style {
+}
+th {
+}
+th {
+    text-align: center;
+}
+td, th {
+    padding: 10px;
+}
+tbody {
+    border-radius: 5px;
+    background-color: #dad6d6;
+}
