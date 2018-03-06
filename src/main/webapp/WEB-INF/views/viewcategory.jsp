@@ -21,6 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/animate.min.css"/>">
 	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/component.css"/>">
 	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/admin.css"/>">
+        <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/cat.css"/>">
         
         
 </head>
@@ -52,7 +53,50 @@
   <div class="col-sm-8">
     <div class="main-content">
     
-    
+        
+        
+        
+        
+        
+         <table class="table table-striped custab">
+    <thead>
+    <a href="${pageContext.request.contextPath}/Admin/Category/Add" class="btn btn-primary btn-xs pull-right"><b>+</b> Add new categories</a>
+        <tr>
+            	<th >Category Id</th>
+ 		<th >Category Title</th>
+		<th class="text-center">Action</th>
+        </tr>
+    </thead>
+            <tr>
+                <td>${category.cate_id}</td>
+                <td>${category.cate_title}</td>
+<!--                <td class="text-center">
+                <a class='btn btn-info btn-xs' href="${pageContext.request.contextPath}/Admin/Category/Edit/${category.cate_id}"><span class="glyphicon glyphicon-edit"></span> Edit</a> 
+                <a href="${pageContext.request.contextPath}/Admin/Category/Delete/${category.cate_id}" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a>
+                </td>
+                   -->
+                    </tr>
+        
+                  <c:forEach items="${categorydata}" var="category">
+ 
+            <tr align="center">
+                <td>${category.cate_id}</td>
+                <td>${category.cate_title}</td>
+ <td class="text-center">
+                <a class='btn btn-info btn-xs' href="${pageContext.request.contextPath}/Admin/Category/Edit/${category.cate_id}"><span class="glyphicon glyphicon-edit"></span> Edit</a> 
+                <a href="${pageContext.request.contextPath}/Admin/Category/Delete/${category.cate_id}" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a>
+                </td>
+                   
+            </tr>
+            </c:forEach>
+    </table>
+   
+        
+        
+        
+        
+        
+<!--    
          <table align="center" width="100%" cellspacing=0 cellpadding=0>
             <tr align="center">
             <td colspan=6><h2>View All Categories</h2></td>
@@ -75,7 +119,7 @@
  
             </tr>
             </c:forEach>
-        </table>
+        </table>-->
     </div>
   </div>
 </div>
