@@ -55,6 +55,8 @@
     <div class="main-content">
   
         <form action="${pageContext.request.contextPath}/Admin/Category/Update" method="POST">
+             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+        
             <h1>Update Category</h1>
            Category id:  <input type="text" name="cate_id" id="cate_id"  value="${categorydata.get(0).cate_id}" readonly >
            Category Title:  <input type="text" name="cate_title" value="${categorydata.get(0).cate_title}"/>

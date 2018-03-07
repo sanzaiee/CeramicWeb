@@ -55,6 +55,8 @@
     <div class="main-content">
   
         <form action="${pageContext.request.contextPath}/Admin/Category/Add" method="POST">
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+        
             <h1>Add Category</h1>
             <input type="text" name="cate_title"/>
             <input type="submit" name="add_cat" value="Add Category"/>

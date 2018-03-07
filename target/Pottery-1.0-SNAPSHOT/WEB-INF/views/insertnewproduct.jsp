@@ -60,8 +60,10 @@
         
         
         
-<form  action="${pageContext.request.contextPath}/Admin/Product/Add" enctype="multipart/form-data" method="post">
-<table>
+<form  action="${pageContext.request.contextPath}/Admin/Product/Add" method="POST">
+
+     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />      
+    <table>
     <tr>
       <th colspan="2"><h3>Insert New Product Details</h3></th>
     </tr>

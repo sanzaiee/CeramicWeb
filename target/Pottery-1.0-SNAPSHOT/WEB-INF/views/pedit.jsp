@@ -60,8 +60,11 @@
         
         
         
-          <form  action="${pageContext.request.contextPath}/Admin/Product/Update" enctype="multipart/form-data" method="post" id="product">
-<table>
+          <form  action="${pageContext.request.contextPath}/Admin/Product/Update" method="post" id="product">
+
+               <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+        
+              <table>
     <tr>
       <th colspan="2"><h3>Update Product</h3></th>
     </tr>

@@ -13,13 +13,15 @@
     </head>
     <body>
         <form action="${pageContext.request.contextPath}/Login" method="POST">
-       
+         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+          
         Username: <input type="text" name="j_username" />
         
         Password: <input type="password" name="j_password"/>
                        
         <input type="submit" value="Login"/> 
-        <input type="reset" value="Reset"/>
         </form>
+         
+         
     </body>
 </html>
